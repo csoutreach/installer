@@ -1,0 +1,8 @@
+sudo apt-get install -y python-dev python-gtk2-dev git
+pushd ~/
+git clone https://github.com/thomasmacpherson/piface.git
+pushd piface/python
+sudo python setup.py install
+popd
+sudo piface/scripts/spidev-setup
+popd
